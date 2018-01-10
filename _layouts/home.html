@@ -7,5 +7,9 @@
 
     {{ content }}
 
+    {% for inc in page.foot-includes %}
+      {% include inc %}
+    {% endfor %}
+
   </body>
 </html>

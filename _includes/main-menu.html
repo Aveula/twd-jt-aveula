@@ -1,5 +1,5 @@
 {% assign menu = site.data.main-menu.items | where: "lang", page.language %}
-{{ menu }}
+{{ menu.item }}
 <nav>
   <ul>
     {% for item in menu.item %}

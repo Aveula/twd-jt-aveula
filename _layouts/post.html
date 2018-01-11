@@ -14,7 +14,7 @@ layout: default
 
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">by <span itemprop="name">{{ page.author }}</span></span>
 
-			<time class="pubdate updated" datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+			<time class="pubdate updated" datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%-d %^b %Y" }}</time>
 			<meta itemprop="dateModified" content="{{ page.date }}">
 
 		</p>

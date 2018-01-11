@@ -11,8 +11,8 @@ layout: default
       <p>{{ tarifa[0].title }}</p>
       <p>{{ tarifa[0].price }}</p>
       <ul>
-      {% for description in tarifa[0].item %}
-       <li>{{ description }}</li>
+      {% for text in tarifa[0].item %}
+       <li>{{ text.description }}</li>
       {% endfor %}
       </ul>
     </div>

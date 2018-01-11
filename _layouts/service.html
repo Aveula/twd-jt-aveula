@@ -4,6 +4,16 @@ layout: default
 
 {{ content }}
 
+{% if page.paquetes %}
+  {% for paquete in page.paquetes %}
+    {% assign tarifa = site.tarifas | where: "title", paquete.title %}
+    <div class="paquete">
+      <p>{{ tarifa.title }}</p>
+      <p>{{ tarifa.price }}</p>
+    </div>
+  {% endfor %}
+{% endif %}
+
 <div class="contratacion">
 {{ page.contratacion | markdownify }}
 </div>

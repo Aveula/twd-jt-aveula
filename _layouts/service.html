@@ -8,9 +8,13 @@ layout: default
   {% for paquete in page.paquetes %}
     {% assign tarifa = site.tarifas | where: "title", paquete %}
     <div class="paquete">
-      {{ tarifa }}
       <p>{{ tarifa[0].title }}</p>
       <p>{{ tarifa[0].price }}</p>
+      <ul>
+      {% for description in tarifa[0].item %}
+       <li>{{ description }}</li>
+      {% endfor %}
+      </ul>
     </div>
   {% endfor %}
 {% endif %}

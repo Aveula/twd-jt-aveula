@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 
 {% if page.paquetes %}
-## Paquetes
+<h2>Paquetes</h2>
   {% for paquete in page.paquetes %}
     {% assign tarifa = site.tarifas | where: "title", paquete %}
     <div class="paquete">

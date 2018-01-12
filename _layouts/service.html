@@ -20,9 +20,10 @@ layout: default
   {% endfor %}
 {% endif %}
 
-{% if page.contratacion %}
+{% if page.paquetes %}
 <div class="contratacion">
-  <h2>Instrucciones de contratación</h2>
-  {{ page.contratacion | markdownify }}
+  {% assign contrato = site.data.contratacion | where: "language", page.language %}
+  <h2>{{ contrato[0].title }}</h2>
+  {{ contrato[0].texto | markdownify }}
 </div>
 {% endif %}

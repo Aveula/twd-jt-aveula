@@ -20,6 +20,9 @@ layout: default
   {% endfor %}
 {% endif %}
 
+{% if page.contratacion %}
 <div class="contratacion">
-{{ page.contratacion | markdownify }}
+  <h2>Instrucciones de contratación</h2>
+  {{ page.contratacion | markdownify }}
 </div>
+{% endif %}

@@ -22,7 +22,7 @@ layout: default
 
 {% if page.paquetes %}
 <div class="contratacion">
-  {% assign contrato = site.data.contratacion | where: "language", page.language %}
+  {% assign contrato = site.data.contratacion.items | where: "language", page.language %}
   <h2>{{ contrato[0].title }}</h2>
   {{ contrato[0].texto | markdownify }}
 </div>

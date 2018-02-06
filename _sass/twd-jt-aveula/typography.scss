@@ -10,6 +10,7 @@ p {
   font-size: 1rem;
   max-width: 38em;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 dl {
@@ -18,6 +19,16 @@ dl {
 
 .caps {
   font-variant: all-small-caps;
+}
+
+.posts.entrevista {
+  p:first-of-type::first-line {
+    font-variant: all-small-caps;
+  }
+  p em:first-of-type {
+    font-style: italic;
+    font-weight: bold;
+  }
 }
 
 @media screen and (min-width: 60em) {

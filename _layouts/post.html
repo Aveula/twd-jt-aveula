@@ -10,7 +10,7 @@ layout: default
 		</picture>
     <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
 		<p class="post-details">
-			<meta itemprop="description" content="{{ page.excerpt }}"/>
+			<meta itemprop="description" content="{{ page.excerpt | strip_html }}"/>
 
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person">by <span itemprop="name">{{ page.author }}</span></span>
 

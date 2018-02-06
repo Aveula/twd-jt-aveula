@@ -7,6 +7,9 @@
   hyphenate-limit-zone: 8%;
   hyphenate-limit-last: always;
 
+  header {
+    text-align: center;
+  }
   img {
     max-width: 38em;
     margin: 0 auto;
@@ -24,11 +27,5 @@
   p em:first-of-type {
     font-style: italic;
     font-weight: bold;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .post-title {
-    text-align: center;
   }
 }

@@ -17,6 +17,10 @@ dl {
   font-weight: bold;
 }
 
+abbr {
+  hyphens: manual;
+}
+
 .caps {
   font-variant: all-small-caps;
 }
@@ -25,6 +29,8 @@ dl {
   font: 1rem/1.5 'Merriweather', serif;
   font-variant-ligatures: common-ligatures;
   hyphens: auto;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-chars: 6 3 2;
 }
 .post.entrevista {
   p:first-of-type::first-line {

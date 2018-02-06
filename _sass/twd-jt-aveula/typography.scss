@@ -34,7 +34,7 @@ abbr {
   hyphenate-limit-zone: 8%;
   hyphenate-limit-last: always;
 }
-.post.entrevista {
+.post.entrevista .content {
   p:first-of-type::first-line {
     font-variant: all-small-caps;
   }

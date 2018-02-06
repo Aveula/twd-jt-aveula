@@ -25,26 +25,6 @@ abbr {
   font-variant: all-small-caps;
 }
 
-.post {
-  font: 1rem/1.5 'Merriweather', serif;
-  font-variant-ligatures: common-ligatures;
-  hyphens: auto;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-chars: 6 3 2;
-  hyphenate-limit-zone: 8%;
-  hyphenate-limit-last: always;
-}
-.post.entrevista .content {
-  p:first-of-type::first-line {
-    font-variant: all-small-caps;
-    font-weight: bold;
-  }
-  p em:first-of-type {
-    font-style: italic;
-    font-weight: bold;
-  }
-}
-
 @media screen and (min-width: 60em) {
   h1 { font-size: 3.1875rem; }
   h2 { font-size: 2.0625rem; }

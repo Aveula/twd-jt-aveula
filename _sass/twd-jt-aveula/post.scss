@@ -27,6 +27,13 @@
     font-weight: bold;
   }
 
+  hr {
+    height: 1em;
+    border: 0;
+    background: url(/assets/images/fleuron.svg) center no-repeat;
+    background-size: contain;
+  }
+
   hr + p {
     font-weight: lighter;
   }

@@ -1,5 +1,5 @@
 {% assign menu = site.data.main-menu.items | where: "language", page.language %}
-<nav>
+<nav id="main-menu">
   <ul>
     {% for item in menu[0].item %}
     <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>

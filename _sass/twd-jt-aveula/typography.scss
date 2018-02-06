@@ -12,16 +12,16 @@ p {
   margin: 0 auto;
 }
 
+.caps {
+  font-variant: small-caps;
+}
+
 @media screen and (min-width: 60em) {
   h1 { font-size: 3.1875rem; }
   h2 { font-size: 2.0625rem; }
   h3 { font-size: 1.5625rem; }
   h4, h5, h6 { font-size: 1.125rem; }
-  p {
-    font-size: 1.125rem;
-    max-width: 38em;
-    margin: 0 auto;
-  }
+  p { font-size: 1.125rem; }
 }
 
 @media screen and (min-width: 120em) {
@@ -29,9 +29,5 @@ p {
   h2 { font-size: 2.75rem; }
   h3 { font-size: 1.75rem; }
   h4, h5, h6 { font-size: 1.3125rem; }
-  p {
-    font-size: 1.3125rem;
-    max-width: 38em;
-    margin: 0 auto;
-  }
+  p { font-size: 1.3125rem; }
 }

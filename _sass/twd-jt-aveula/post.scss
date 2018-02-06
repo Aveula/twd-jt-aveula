@@ -10,10 +10,6 @@
   header {
     text-align: center;
   }
-  img {
-    max-width: 38em;
-    margin: 0 auto;
-  }
 
   .post-details {
     font-size: 0.85rem;
@@ -27,5 +23,14 @@
   p em:first-of-type {
     font-style: italic;
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .post {
+    img {
+      max-width: 38em;
+      margin: 0 auto;
+    }
   }
 }

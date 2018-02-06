@@ -12,6 +12,7 @@ p {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
+hr { max-width: 38em; }
 
 dl {
   font-weight: bold;
@@ -30,7 +31,7 @@ abbr {
   h2 { font-size: 2.0625rem; }
   h3 { font-size: 1.5625rem; }
   h4, h5, h6 { font-size: 1.125rem; }
-  p { font-size: 1.125rem; }
+  p, hr { font-size: 1.125rem; }
 }
 
 @media screen and (min-width: 120em) {
@@ -38,5 +39,5 @@ abbr {
   h2 { font-size: 2.75rem; }
   h3 { font-size: 1.75rem; }
   h4, h5, h6 { font-size: 1.3125rem; }
-  p { font-size: 1.3125rem; }
+  p, hr { font-size: 1.3125rem; }
 }

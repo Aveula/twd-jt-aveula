@@ -7,7 +7,9 @@
 
     {% include main-menu.html %}
 
+    <main>
     {{ content }}
+    </main>
 
     {% for inc in page.foot-includes %}
       {% include {{ inc }} %}

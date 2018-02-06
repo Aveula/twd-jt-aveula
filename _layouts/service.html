@@ -2,28 +2,33 @@
 layout: default
 ---
 
+<article>
 {{ content }}
 
-{% if page.paquetes %}
-<h2>Paquetes</h2>
-  {% for paquete in page.paquetes %}
-    {% assign tarifa = site.tarifas | where: "title", paquete %}
-    <div class="paquete">
-      <p>{{ tarifa[0].title }}</p>
-      <p>{{ tarifa[0].price }}</p>
-      <ul>
-      {% for text in tarifa[0].item %}
-       <li>{{ text.description }}</li>
-      {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-{% endif %}
+<section id="paquetes">
+  {% if page.paquetes %}
 
-{% if page.paquetes %}
-<div class="contratacion">
-  {% assign contrato = site.data.contratacion.items | where: "language", page.language %}
-  <h2>{{ contrato[0].title }}</h2>
-  {{ contrato[0].texto | markdownify }}
-</div>
-{% endif %}
+    <header>
+     <h2>Paquetes</h2>
+    </header>
+    {% for paquete in page.paquetes %}
+      {% assign tarifa = site.tarifas | where: "title", paquete %}
+      <div class="paquete">
+        <p>{{ tarifa[0].title }}</p>
+        <p>{{ tarifa[0].price }}</p>
+        <ul>
+        {% for text in tarifa[0].item %}
+         <li>{{ text.description }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+
+    <div class="contratacion">
+      {% assign contrato = site.data.contratacion.items | where: "language", page.language %}
+      <h2>{{ contrato[0].title }}</h2>
+      {{ contrato[0].texto | markdownify }}
+    </div>
+
+  {% endif %}
+</section>

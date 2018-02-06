@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article>
+<article class="post{% if page.tags contains 'entrevistas' %} entrevista{% endif %}">
   <header>
     <picture>
 			<source srcset="{{ page.image | absolute_url }}" media="(min-width: 600px)">

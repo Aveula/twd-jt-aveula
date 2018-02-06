@@ -21,6 +21,11 @@ dl {
   font-variant: all-small-caps;
 }
 
+.post {
+  font: 1rem/1.5 'Alegreya', serif;
+  font-variant-ligatures: common-ligatures;
+  hyphens: auto;
+}
 .post.entrevista {
   p:first-of-type::first-line {
     font-variant: all-small-caps;

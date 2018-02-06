@@ -37,6 +37,7 @@ abbr {
 .post.entrevista .content {
   p:first-of-type::first-line {
     font-variant: all-small-caps;
+    font-weight: bold;
   }
   p em:first-of-type {
     font-style: italic;

@@ -15,16 +15,22 @@
     font-size: 0.85rem;
   }
 
+  .content {
+    p:first-of-type::first-line {
+      font-variant: all-small-caps;
+      font-weight: bold;
+    }
+  }
+
   .pregunta {
     font-style: italic;
     font-weight: bold;
   }
-}
-.post.entrevista .content {
-  p:first-of-type::first-line {
-    font-variant: all-small-caps;
-    font-weight: bold;
+
+  hr p {
+    font-size: 0.85em;
   }
+
 }
 
 @media screen and (min-width: 60em) {

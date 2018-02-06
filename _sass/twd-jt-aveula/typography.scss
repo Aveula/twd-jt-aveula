@@ -31,6 +31,8 @@ abbr {
   hyphens: auto;
   hyphenate-limit-lines: 2;
   hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-zone: 8%;
+  hyphenate-limit-last: always;
 }
 .post.entrevista {
   p:first-of-type::first-line {

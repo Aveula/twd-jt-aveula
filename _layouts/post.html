@@ -6,7 +6,7 @@ layout: default
   <header>
     {% assign image = page.image | split: '/' | last %}
     <picture>
-      <source srcset="/assets/images/small/{{ image }}" media="(min-width: 20em)">
+      <source srcset="/assets/images/small/{{ image }}">
 			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
       <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">
 			<img src="{{ page.image }}" title="{{ page.title }}" alt="">

@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<article>
+<article class="servicio">
   <header>
     <h1>{{ page.title }}</h1>
+    {% assign image = page.image | split: '/' | last %}
+    <picture>
+			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
+      <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">
+			<img src="/assets/images/small/{{ image }}" title="{{ page.title }}" alt="">
+		</picture>
   </header>
 
   <section class="content">

@@ -4,6 +4,9 @@
 }
 
 #main-menu {
+  h1 {
+    display: none;
+  }
   ul {
     display: flex;
     justify-content: center;

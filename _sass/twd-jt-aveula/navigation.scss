@@ -30,12 +30,13 @@
     .logo {
       flex: 1;
     }
-  }
-  #main-menu {
-    flex: 2;
-    ul {
-      justify-content: space-around;
-      height: 100%;
+
+    #main-menu {
+      flex: 2;
+      ul {
+        justify-content: space-around;
+        height: 100%;
+      }
     }
   }
 }

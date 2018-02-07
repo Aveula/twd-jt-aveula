@@ -6,6 +6,7 @@
   margin-bottom: 2rem;
   padding: 0.5rem 0;
   .logo {
+    margin-bottom: 0.5rem;
     img {
       margin: 0 auto;
     }
@@ -21,7 +22,12 @@
       align-items: center;
       height: 3rem;
       li {
-
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+        }
       }
     }
   }

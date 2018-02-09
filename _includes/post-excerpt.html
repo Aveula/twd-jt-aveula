@@ -1,0 +1,21 @@
+<article class="post excerpt{% if post.tags contains 'entrevistas' %} entrevista{% endif %}">
+  <header>
+    <h1 class="post-title" itemprop="headline">{{ post.title }}</h1>
+		<p class="post-details">
+			<meta itemprop="description" content="{{ post.excerpt | strip_html }}"/>
+			<span itemprop="author" itemscope itemtype="http://schema.org/Person">por <span itemprop="name">{{ post.author }}</span></span>
+			<time class="pubdate updated" datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date: "%-d %^b %Y" }}</time>
+			<meta itemprop="dateModified" content="{{ post.date }}">
+		</p>
+    {% assign image = post.image | split: '/' | last %}
+    <picture>
+			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
+      <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">
+		  <img src="/assets/images/small/{{ image }}" title="{{ page.title }}" alt="">
+		</picture>
+  </header>
+
+  <section class="content">
+  {{ post.excerpt }}
+  </section>
+</article>

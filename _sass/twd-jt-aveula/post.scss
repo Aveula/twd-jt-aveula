@@ -1,3 +1,8 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .post {
   font: 1rem/1.5 'Merriweather', serif;
   font-variant-ligatures: common-ligatures;
@@ -42,6 +47,10 @@
   hr + p {
     font-weight: lighter;
   }
+
+}
+
+.posts.excerpt {
 
 }
 

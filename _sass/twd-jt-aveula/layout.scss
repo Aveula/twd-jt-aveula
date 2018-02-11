@@ -9,4 +9,11 @@ main { grid-column: 2; }
 
 .main-aside {
   padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  article {
+    flex: 300px 1 0;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
 }

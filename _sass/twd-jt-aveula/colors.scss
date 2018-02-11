@@ -3,3 +3,8 @@ $light-blue: hsl(212, 7%, 100%);
 $dark-blue: hsl(212,78%,60%);
 $gray: hsl(212, 0%, 84%);
 $black: hsl(212, 0%, 15%);
+
+.main-aside {
+  background-color: $base-blue;
+  color: $gray;
+}

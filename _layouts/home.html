@@ -3,12 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="frontpage">
 
     {% include main-menu.html %}
 
     <main>
       {{ content }}
+
+      <section id="testimonios">
+        {% include main-testimonios.html %}
+      </section>
+
       <section id="values">
         {% include main-values.html %}
       </section>

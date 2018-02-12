@@ -7,8 +7,7 @@ nav,
 .main-aside { grid-column: 1/-1;}
 main { grid-column: 2; }*/
 
-.main-aside,
-#values {
+.main-aside
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +18,11 @@ main { grid-column: 2; }*/
   }
 }
 #values {
-  article {
-    flex: 300px 0 0;
+  display: grid;
+}
+
+@media screen and (min-width: 60em) {
+  #values {
+    grid-template-columns: 1fr 1fr;
   }
 }

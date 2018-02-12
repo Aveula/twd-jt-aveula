@@ -50,3 +50,13 @@ abbr {
   h3 { font-size: 1.3125rem; }
   h4, h5, h6 { font-size: 1rem; }
 }
+
+#servicios,
+#values,
+.main-aside {
+  h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}

@@ -1,13 +1,14 @@
-body {
+/*body {
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
 }
 
 nav,
 .main-aside { grid-column: 1/-1;}
-main { grid-column: 2; }
+main { grid-column: 2; }*/
 
-.main-aside {
+.main-aside,
+#values {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;

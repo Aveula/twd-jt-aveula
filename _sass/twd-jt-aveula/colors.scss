@@ -4,7 +4,15 @@ $dark-blue: hsl(212,65%,36%);
 $gray: hsl(212, 0%, 88%);
 $black: hsl(212, 0%, 12%);
 
+body {
+  color: $black;
+}
+
 .main-aside {
   background-color: $base-blue;
   color: $gray;
+}
+
+#values {
+  background-color: $light-blue;
 }

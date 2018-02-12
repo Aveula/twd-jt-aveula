@@ -27,5 +27,8 @@ main { grid-column: 2; }*/
   #values,
   #servicios {
     grid-template-columns: 1fr 1fr;
+    h2 {
+      grid: 1/-1;
+    }
   }
 }

@@ -1,0 +1,11 @@
+<h2>Servicios</h2>
+{% assign servicios = site.servicios | where: 'language', page.language %}
+{% for servicio in servicios %}
+<article>
+  <header>
+    <img src="{{ servicio.image }}" alt="">
+    <h1>{{ servicio.title }}</h1>
+  </header>
+  {{ servicio.excerpt }}
+</article>
+{% endfor %}

@@ -3,7 +3,7 @@
 {% for servicio in servicios %}
 <article>
   <header>
-    {% assign image = page.image | split: '/' | last %}
+    {% assign image = servicio.image | split: '/' | last %}
     <picture>
 			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
       <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">

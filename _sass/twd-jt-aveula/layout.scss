@@ -24,7 +24,8 @@ main { grid-column: 2; }*/
 }
 
 @media screen and (min-width: 60em) {
-  #values {
+  #values,
+  #servicios {
     grid-template-columns: 1fr 1fr;
   }
 }

@@ -1,7 +1,7 @@
-{% assign testimonios = site.principios %}
+{% assign testimonios = site.testimonios %}
 {% for testimonio in testimonios %}
 <article>
-  {{ value.content }}
+  {{ testimonio.content }}
   <p>{{ testimonio.autor }}</p>
   <p>{{ testimonio.cargo }}</p>
   <img src="{{ testimonio.image }}" alt="">

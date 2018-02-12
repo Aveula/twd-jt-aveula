@@ -1,0 +1,9 @@
+{% assign values = site.principios | where: 'language', page.language %}
+{% for value in values %}
+<article>
+  <header>
+    <h1>{{ value.title }}</h1>
+  </header>
+  {{ value.content }}
+</article>
+{% endfor %}

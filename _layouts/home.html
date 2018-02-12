@@ -8,7 +8,10 @@
     {% include main-menu.html %}
 
     <main>
-    {{ content }}
+      {{ content }}
+      <section id="values">
+        {% include main-values.html %}
+      </section>
     </main>
 
     {% include main-aside.html %}

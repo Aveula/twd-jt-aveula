@@ -7,7 +7,7 @@ nav,
 .main-aside { grid-column: 1/-1;}
 main { grid-column: 2; }*/
 
-.main-aside
+.main-aside {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +17,7 @@ main { grid-column: 2; }*/
     margin-bottom: 1rem;
   }
 }
+
 #values {
   display: grid;
 }

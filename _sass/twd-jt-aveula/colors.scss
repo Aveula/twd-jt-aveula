@@ -5,7 +5,7 @@ $gray: 212, 0%, 88%;
 $black: 212, 0%, 12%;
 
 body {
-  color: hsl($black);
+  color: hsl(#{$black});
 }
 
 .main-aside {

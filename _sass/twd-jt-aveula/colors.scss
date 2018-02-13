@@ -1,11 +1,11 @@
-$base-blue: 212,61%,43%;
-$light-blue: 212, 100%, 97%;
-$dark-blue: 212,65%,36%;
-$gray: 212, 0%, 88%;
-$black: 212, 0%, 12%;
+$base-blue: (212,61%,43%);
+$light-blue: (212, 100%, 97%);
+$dark-blue: (212,65%,36%);
+$gray: (212, 0%, 88%);
+$black: (212, 0%, 12%);
 
 body {
-  color: hsl(#{$black});
+  color: hsl($black);
 }
 
 .main-aside {

@@ -1,9 +1,0 @@
-{% assign testimonios = site.testimonios %}
-{% for testimonio in testimonios %}
-<article>
-  {{ testimonio.content }}
-  <p>{{ testimonio.autor }}</p>
-  <p>{{ testimonio.cargo }}</p>
-  <img src="{{ testimonio.logo }}" alt="">
-</article>
-{% endfor %}

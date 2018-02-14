@@ -5,25 +5,19 @@
 
   <body class="frontpage">
 
-    {% include main-menu.html %}
+    {% include header-global.html %}
 
-    <main>
+    <main role="content">
       {{ content }}
 
-      <section id="servicios">
-        {% include main-servicios.html %}
-      </section>
+      {% include section-servicios.html %}
 
-      <section id="testimonios">
-        {% include main-testimonios.html %}
-      </section>
+      {% include section-testimonios.html %}
 
-      <section id="values">
-        {% include main-values.html %}
-      </section>
+      {% include section-values.html %}
     </main>
 
-    {% include main-aside.html %}
+    {% include aside-global.html %}
 
     {% for inc in page.foot-includes %}
       {% include {{ inc }} %}

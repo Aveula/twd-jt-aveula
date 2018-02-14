@@ -1,4 +1,4 @@
-.head {
+.header.header-global {
   position: sticky;
   top: 0;
   background-color: white;
@@ -15,7 +15,7 @@
     }
   }
 
-  #main-menu {
+  nav {
     h1 {
       display: none;
     }
@@ -37,13 +37,13 @@
 }
 
 @media screen and (min-width: 60em) {
-  .head {
+  .header.header-global {
     flex-flow: row;
     .logo {
       flex: 1;
     }
 
-    #main-menu {
+    nav {
       flex: 2;
       ul {
         justify-content: space-around;

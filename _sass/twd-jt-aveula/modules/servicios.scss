@@ -18,5 +18,9 @@
     padding: 0;
     margin: 20px 0 10px 0;
     font-weight: 700;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
 }

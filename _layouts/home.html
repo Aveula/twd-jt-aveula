@@ -8,13 +8,13 @@
     {% include header-global.html %}
 
     <main role="content">
+
       {{ content }}
 
-      {% include section-servicios.html %}
+      {% for inc in page.content-includes %}
+        {% include {{ inc }} %}
+      {% endfor %}
 
-      {% include section-testimonios.html %}
-
-      {% include section-values.html %}
     </main>
 
     {% include aside-global.html %}

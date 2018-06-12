@@ -2,7 +2,7 @@
   <h2>Servicios</h2>
   {% assign servicios = site.servicios | where: 'language', page.language %}
   {% for servicio in servicios %}
-  <article>
+  <article class="servicio servicio-excerpt">
     <header>
       {% assign image = servicio.image | split: '/' | last %}
       <picture>

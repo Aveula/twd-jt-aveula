@@ -5,12 +5,14 @@
   <article class="servicio servicio-excerpt">
     <header>
       {% assign image = servicio.image | split: '/' | last %}
-      <picture>
-  			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
-        <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">
-  		  <img src="/assets/images/small/{{ image }}" title="{{ page.title }}" alt="">
-  		</picture>
-      <h3>{{ servicio.title }}</h3>
+      <a href="{{ servicio.permalink }}">
+        <picture>
+    			<source srcset="/assets/images/medium/{{ image }}" media="(min-width: 60em)">
+          <source srcset="/assets/images/large/{{ image }}" media="(min-width: 120em)">
+    		  <img src="/assets/images/small/{{ image }}" title="{{ page.title }}" alt="">
+    		</picture>
+        <h3>{{ servicio.title }}</h3>
+      </a>
     </header>
 
     <section class="content">

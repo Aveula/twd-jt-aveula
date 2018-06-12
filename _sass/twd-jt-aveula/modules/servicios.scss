@@ -11,8 +11,12 @@
 }
 
 .servicio {
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 1.20;
+    padding: 0;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
   }
 }

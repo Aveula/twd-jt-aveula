@@ -16,7 +16,7 @@
     </header>
 
     <section class="content">
-    {{ servicio.excerpt }}
+    {{ servicio.excerpt | truncate: 100 }}
     </section>
   </article>
   {% endfor %}

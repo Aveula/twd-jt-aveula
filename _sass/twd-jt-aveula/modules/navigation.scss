@@ -31,10 +31,10 @@
         a {
           text-decoration: none;
           color: $black;
-        }
-        &:hover {
-          text-decoration: underline;
-          color: $dark-blue;
+          &:hover {
+            text-decoration: underline;
+            color: $dark-blue;
+          }
         }
       }
     }

@@ -28,6 +28,7 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: bold;
+        border-bottom: solid 2px transparent;
         transition:all 0.2s ease-in-out;
         &:hover {
           border-bottom: solid 2px $dark-blue;

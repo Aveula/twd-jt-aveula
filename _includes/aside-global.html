@@ -9,7 +9,12 @@
     <header>
       <h1>Artículos</h1>
     </header>
-    <p>{{ site.description }}</p>
+    {% assign posts = site.posts | limit: 3 %}
+    {% for post in posts %}
+    <div class="">
+      {% include post-excerpt.html %}
+    </div>
+    {% endfor %}
   </article>
   <article class="item">
     <header>

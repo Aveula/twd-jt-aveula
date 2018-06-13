@@ -18,10 +18,22 @@ main { grid-column: 2; }*/
   }
 }
 
-.section {
+.grid {
   display: grid;
   grid-gap: 1.5rem;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 60em) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    h2 {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+.section {
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -32,10 +44,6 @@ main { grid-column: 2; }*/
   .section {
     width: 80%;
     margin: auto;
-    grid-template-columns: repeat(4, 1fr);
-    h2 {
-      grid-column: 1/-1;
-    }
   }
 }
 

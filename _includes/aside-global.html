@@ -9,8 +9,8 @@
     <header>
       <h1>Artículos</h1>
     </header>
-    {% assign posts = site.posts | limit: 3 %}
-    {% for post in posts %}
+    {% assign posts = site.posts %}
+    {% for post in posts limit: 3 %}
     <div class="">
       {% include post-excerpt.html %}
     </div>

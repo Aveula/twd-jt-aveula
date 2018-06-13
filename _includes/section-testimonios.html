@@ -1,11 +1,13 @@
 <section class="section">
-  {% assign testimonios = site.testimonios %}
+  {% assign testimonios = site.testimonios | where: 'language', page.language %}
   {% for testimonio in testimonios %}
-  <article>
+  <blockquote class="testimonio">
     {{ testimonio.content }}
-    <p>{{ testimonio.autor }}</p>
-    <p>{{ testimonio.cargo }}</p>
-    <img src="{{ testimonio.logo }}" alt="">
-  </article>
+    <div class="testimonio--atribucion">
+      <p>{{ testimonio.autor }}</p>
+      <p>{{ testimonio.cargo }}</p>
+      <img src="{{ testimonio.logo }}" alt="{{ testimonio.empresa }}">
+    </div>
+  </blockquote>
   {% endfor %}
 </section>

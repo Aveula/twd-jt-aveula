@@ -1,5 +1,5 @@
 <section class="section">
-  {% assign testimonios = site.testimonios | where: 'language', page.language %}
+  {% assign testimonios = site.testimonios %}
   {% for testimonio in testimonios %}
   <blockquote class="testimonio">
     {{ testimonio.content }}

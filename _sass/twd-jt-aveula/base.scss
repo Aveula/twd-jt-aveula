@@ -9,3 +9,10 @@ img {
   max-width: 100%;
   display: block;
 }
+
+a {
+  transition:all 0.2s ease-in-out;
+  &:hover {
+    color: $dark-blue;
+  }
+}

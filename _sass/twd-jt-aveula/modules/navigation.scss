@@ -28,11 +28,14 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: bold;
+        transition:all 0.2s ease-in-out;
+        &:hover {
+          border-bottom: solid 2px $dark-blue;
+        }
         a {
           text-decoration: none;
           color: $black;
           &:hover {
-            text-decoration: underline;
             color: $dark-blue;
           }
         }

@@ -6,10 +6,15 @@
 nav,
 .main-aside { grid-column: 1/-1;}
 main { grid-column: 2; }*/
+
 .aside,
 .section {
   margin: auto;
   padding: 2rem 10%;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 .aside.aside-global {
   padding: 1rem;
@@ -31,25 +36,12 @@ main { grid-column: 2; }*/
   }
 }
 
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-/*@media screen and (min-width: 60em) {
-  .grid {
-    h2 {
-      grid-column: 1/-1;
-    }
+@media screen and (min-width: 60em) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-}*/
-
-.section {
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
